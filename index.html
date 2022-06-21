@@ -661,11 +661,14 @@ $('.features').click(function(){
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true,
     effect : 'fade',
-    onSlideChangeStart:function(swiper){
+    on:{
+      slideChangeTransitionStart:function(roleswiper){
         var length = $(".game_roles .swiper_dock_list li").length;
         $(".game_roles .swiper_dock_list li img").removeClass('on');
-        $(".game_roles .swiper_dock_list li img").eq((swiper.activeIndex-1)%length).addClass('on');
+        $(".game_roles .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
     }
+    }
+   
 });
 $(".game_roles .swiper_dock_list li").click(function(){
     var index = $(this).index()+1;
