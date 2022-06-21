@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机端内容页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script>
+      var phoneWidth =  parseInt(window.screen.width);
+  var phoneScale = phoneWidth/750;
+  var ua = navigator.userAgent;
+  if (/Android (\d+\.\d+)/.test(ua)){
+    var version = parseFloat(RegExp.$1);
+    if(version>2.3){
+      document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    }else{
+      document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+    }
+  } else {
+    document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+  }
+
+  </script>
+</head>
+<body>
+<!--菜单弹窗-->
+<div class="nav_box">
+  <div class="nav_box_main">
+      <div class="nav_top">
+          <div class="closed"><img src="images/menu_closed.png"></div>
+      </div> 
+      <div class="nav_btn">
+          <div class="nav_link">
+              <div class="link01 link"><a href="index.html" target="_blank">HOME</a></div>
+              <div class="link02  active link"><a href="list.html">NEWS</a></div>
+              <div class="link03 link characters" ><a href="index.html#slide03">CHARACTERS</a></div>
+              <div class="link04 link flower"><a href="index.html#slide04">FLOWER FAIRIES</a></div>
+              <div class="link05 link shots"><a href="index.html#slide05">SHOTS</a></div>
+              <div class="link06 link features"><a href="index.html#slide06">FEATURES</a></div>
+              <div class="link07 link"><a href="contact.html">LANGUAGE</a></div>
+          </div>
+      </div>
+      <div class="follow">
+          <a href="">FOLLOW US</a>
+      </div>
+  </div>
+</div>
+<!--内容-->
+<div class="list_wrap">
+  <div class="list_menu"><img src="images/part1_menu.png"></div>
+  <div class="list_logo"><img src="images/list_logo.png"></div>
+  <div class="content_wrapper">
+      <h1 class="title">MAJOR UP DATE</h1>
+      <h2 class="sub-title">2022.05.22</h2>
+          <div class="content">
+              <div class="content_top"><img src="images/content_top_bg.png"></div>
+              <div class="content_center">
+                  <h2>New [Blessing System]</h2>
+                  <p> 1. Charge Holy Tree to obtain [Blessing Fruit] of various qualities and [Blessing Coins]. Fruit of different qualities has a greater chance to be grown into [Blessing Crystals] of the matching quality;</p>
+                  <p>2. [Energy Essence] can be obtained from Windhunt Quest, Treasure Map, Deals Shop, which can be used for charging the Holy Tree.</p>
+                  <p>3. [Blessing Coins] can be used to redeem rewards in the Blessing Shop;</p>
+                  <p>4. Crystal and Coppers which used to upgrade equipment, Sacred Windbell, Reroll Dew, and Prophet Crystal can be used for charging the Holy Tree;</p>
+                  <p>5. [Blessing Coins] can be used to redeem rewards in the Blessing Shop.</p>
+                  <h2 class="mr_t"> New [Elemental Sprite]</h2>
+                  <p>1. Complete tutorial quests regarding Elemental Sprites to obtain them! Elemental Sprites grant your character Elemental Stats;</p>
+              </div>
+      </div>
+  </div>
+</div>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script type='text/javascript'  src="js/qiehuan.js"></script>
+</body>
+</html>
