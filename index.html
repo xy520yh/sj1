@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/swiper.min.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/header.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" />
+    <style>
+     
+    </style>
     <script>
     var phoneWidth =  parseInt(window.screen.width);
 		var phoneScale = phoneWidth/750;
@@ -346,10 +349,18 @@
                     <div class="role_name">Lycoris</div> 
                     <div class="scroll">
                       <h3>Extreme Love</h3>
-                      <h4><span>Floriography</span></h4>
-                      <p>The flowers that grow in the dark and shady environment have the hottest colors\nWith full of enthusiasm, she will always keep a extremely strong emotion to the host.</p>
-                      <p> She looks very mature and calm but on the contrary she is a woman who is always for love</p>
-                      <p> If some one is cheating on her, he might not be able to see the sun of the next day. </p>
+                      <div class="swiper flower_text_swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <h4><span>Floriography</span></h4>
+                            <p>The flowers that grow in the dark and shady environment have the hottest colors\nWith full of enthusiasm, she will always keep a extremely strong emotion to the host.</p>
+                            <p> She looks very mature and calm but on the contrary she is a woman who is always for love</p>
+                            <p> If some one is cheating on her, he might not be able to see the sun of the next day. </p>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                      </div>
+                    
                     </div>
                   </div>
                 </dd>
@@ -431,13 +442,21 @@
                   <div class="note">
                     <div class="role_name">Erythrina</div> 
                     <div class="scroll">
-                      <h3>Unyielding</h3>
-                      <h4><span>Floriography</span></h4>
-                      <p>She may be quiet, but her very presence draws people's respect.
-                        The mystery surrounding her comes from her unusual grasp of time. In the eyes of Tiger's Claw, the abstract of time becomes a [silky substance].
-                        She doesn't know how she got this power, probably because the Cabala ancients used to use her to count time.She may be quiet, but her very presence draws people's respect.
-                        The mystery surrounding her comes from her unusual grasp of time. In the eyes of Tiger's Claw, the abstract of time becomes a [silky substance].
-                        She doesn't know how she got this power, probably because the Cabala ancients used to use her to count time.</p>
+                      <div class="swiper flower_text_swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <h3>Unyielding</h3>
+                            <h4><span>Floriography</span></h4>
+                            <p>She may be quiet, but her very presence draws people's respect.
+                              The mystery surrounding her comes from her unusual grasp of time. In the eyes of Tiger's Claw, the abstract of time becomes a [silky substance].
+                              She doesn't know how she got this power, probably because the Cabala ancients used to use her to count time.She may be quiet, but her very presence draws people's respect.
+                              The mystery surrounding her comes from her unusual grasp of time. In the eyes of Tiger's Claw, the abstract of time becomes a [silky substance].
+                              She doesn't know how she got this power, probably because the Cabala ancients used to use her to count time.</p>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar"  style="display:block;"></div>
+                      </div>
+                     
                     </div>
                   </div>
                 </dd>
@@ -651,12 +670,13 @@ $('.features').click(function(){
 });
  //文字滚动时，禁止全屏滚动
  $(function () {
-    $('.scroll').hover(function () {
+    $('.note').hover(function () {
       Mainswiper.mousewheel.disable();
     }, function () {
       Mainswiper.mousewheel.enable();
     })
 })  
+
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true,
@@ -676,7 +696,7 @@ $(".game_roles .swiper_dock_list li").click(function(){
     $(".game_roles .swiper_dock_list li img").removeClass('on');
     $(".game_roles .swiper_dock_list li img").eq(index-1).addClass('on');
 });
- /*part3--花灵*/ 
+ /*part4--花灵*/ 
 var flowerswiper = new Swiper('.part4_swiper',{
     loop:true, initialSlide: 6,
     slideToClickedSlide: true,
@@ -707,7 +727,17 @@ on: {
         },
       },
 });
-
+/*part4--花灵下的文字滚动*/
+var swiper = new Swiper(".flower_text_swiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        freeMode: true,
+        scrollbar: {
+       
+          el: ".flower_text_swiper .swiper-scrollbar",
+        },
+        mousewheel: true,
+ });
  /*part5--theworld*/
 
  var worldSwiper=new Swiper(".infoList",{
@@ -794,6 +824,7 @@ function openModal() {
 			slides[slideIndex-1].style.display = "block";
 			
 	}
+
  </script>
 </body>
 </html>
