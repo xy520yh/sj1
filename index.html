@@ -799,122 +799,29 @@ var flower_text_swiper= new Swiper(".flower_text_swiper", {
 
 
 
-//  var swiper2 = new Swiper(".flower_text_swiper2", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper2 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper3 = new Swiper(".flower_text_swiper3", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper3 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper4 = new Swiper(".flower_text_swiper4", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper4 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper5 = new Swiper(".flower_text_swiper5", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper5 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper6 = new Swiper(".flower_text_swiper6", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper6 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper7 = new Swiper(".flower_text_swiper7", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper7 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper8 = new Swiper(".flower_text_swiper8", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper8 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper9 = new Swiper(".flower_text_swiper9", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper9 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
-//  var swiper10 = new Swiper(".flower_text_swiper10", {
-//         direction: "vertical",
-//         slidesPerView: "auto",
-//         freeMode: true,
-//         scrollbar: {
-       
-//           el: ".flower_text_swiper10 .swiper-scrollbar",
-//         },
-//         mousewheel: true,
-//  });
  /*part5--theworld*/
 
  var worldSwiper=new Swiper(".infoList",{
-  effect: 'coverflow',
- grabCursor: true,centeredSlides: true, loop:true,
-  wrapperClass:"info-wrap",
-  slideClass:"info_item",
-
+  effect: 'coverflow',centeredSlides: true,
+  grabCursor: true,
+  slidesPerView:"auto",
+ centeredSlidesBounds: true,observer:true,observeParents:true,
   navigation: {
     nextEl: ".info_next2",
     prevEl: ".info_prev2",
   },
- 
+
   scrollbar: {
     el: ".info_bar",
     // hide: true,
     dragSize: 100,
+    hide: false,
+    draggable: true,
   },
-  scrollbarHide:!1,
-  scrollbarDraggable:!0,
-  simulateTouch:!1,
-  initialSlide:0,
-  slidesPerView:"auto",
-  mousewheelControl:!0,
-
-  speed:800,roundLengths:!0,
+  simulateTouch : false,//禁止鼠标模拟
+  mousewheel: true,
+  speed:800,
+  roundLengths : true, 
   // preventClicks:!1,onInit:function(){
   //     $(".info_prev").addClass("disabled")
   // }
@@ -924,6 +831,7 @@ var flower_text_swiper= new Swiper(".flower_text_swiper", {
   // },
 }
 );
+worldSwiper.scrollbar.updateSize();
 $(".section1").on("click",".info_prev",function(){
 $(".info_prev2").click()
 }

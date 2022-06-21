@@ -255,4 +255,6 @@ img.hover-shadow{transition:0.3s}
  .section1 .infoList .info_bar{width:50%;height:2px;position:absolute;bottom:24px;left:50%;background:#5b8496}
  .info-wrap li.swiper-slide-active .point{opacity:1;}
 
- .section1 .infoList .info_bar .swiper-scrollbar-drag{height:100%;background:#7fb5d7;border-radius:0;width:189px;height:15px;border-radius:20px;left:-100px;position:absolute;top:-6px;}
+ .section1 .infoList .info_bar .swiper-scrollbar-drag{height:100%;background:#7fb5d7;border-radius:0;width:189px;height:15px;border-radius:20px;left:0px;position:absolute;top:-6px;}
+
+ 
