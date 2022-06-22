@@ -6,7 +6,7 @@ html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%; text-size-adjus
 ::before,::after{   box-sizing: border-box;margin: 0;padding: 0;  -webkit-tap-highlight-color: rgba(0,0,0,0);}
 a{color:inherit; text-decoration: none;}
 
-html,body{background-color:black;background-image:url(../images/list_bg.jpg);background-size:cover;font-weight:100;height:100%;width:100%;max-width:unset;margin:0 auto;background-repeat:no-repeat;background-attachment:fixed;}
+html,body{background-color:black;background-image:url(../images/list_bg.jpg);background-size:cover;height:100%;width:100%;max-width:unset;margin:0 auto;background-repeat:no-repeat;background-attachment:fixed;}
 .content_wrapper{min-height:calc(100vh - 285px);width:682px;margin:0 auto 0;padding-top:150px; padding-bottom: 100px;}
 .content_wrapper .title{color:#fff;font-size:50px;text-align:center;text-transform:uppercase !important;font-family:'Times New Roman',Times,serif;margin:0 auto;text-shadow:3px 3px 10px #092c66;
 margin-bottom: 30px;}

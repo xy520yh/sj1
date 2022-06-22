@@ -29,7 +29,7 @@ p.news_date{color:#909a9e;font-size:24px;}
 .news_tab_links a{width:100%;height:100%;display:flex;justify-content:space-between;align-items:center;}
 .news_title{width:460px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:30px;}
 .news_tab_more{display:flex;justify-content:center;align-items:center;font-size:16px;width:620px;margin:35px auto 0px;}
-.news_tab_more img{margin-left:40px;}
+.news_tab_more a:first-child{margin-right:40px;}
 
 .news_tab{height: 100%;}
 .news_box{height:calc(100% - 200px)}
