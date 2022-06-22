@@ -16,6 +16,6 @@
 .list_logo{display:flex;flex-flow:column nowrap;justify-content:space-between;align-items:center;position:absolute;top:0px;left:0px;text-align:center;z-index:88;
     -webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out;}
  .list_menu{position:absolute;top:0px;right:62px;width:54px;height:57px;z-index: 10;}
- .nav_link .link a{color:#181818;}
+ .nav_link .link a{color:#181818;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
  .follow a{width:700px;border-radius: 140px;border:1px solid #464646;height:100px;display: block;bottom:70px; position: absolute;left:25px;color:#181818;line-height: 100px;font-size:52px;} 
