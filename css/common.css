@@ -92,7 +92,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .game_roles .swiper-slide-active .role_img{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;}
 /*part4*/
 .part4_title{width:750px;height:130px;display:flex;justify-content:center;position:absolute;top:60px;left:0px;}
-.part4_fw{width:100%;height:100%;object-fit:cover; position: absolute;left:0px;top:100px; z-index:5;}
+/* .part4_fw{width:100%;height:100%;object-fit:cover; position: absolute;left:0px;top:100px; z-index:5;} */
 .role{width:750px;margin:0 auto;}
 .role .content dd{position:relative;width:750px;height:100vh;display:none;}
 .role .content dd:first-child{display:block;}
@@ -105,7 +105,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .note h4::after{transform:rotate(180deg);}
 .note h4 span{margin:0 15px;}
 .note p{font-size:32px;line-height:50px;margin-bottom:15px;}
-.role .note{width:363px;height:613px;color:#fff;font-size:18px;position:absolute;left:30px;top:415px ;background:url(../images/part4_text_bg.png); padding-bottom: 30px;border:1px solid #f00;}
+.role .note{width:363px;height:613px;color:#fff;font-size:18px;position:absolute;left:30px;top:415px ;background:url(../images/part4_text_bg.png); padding-bottom: 30px;border:1px solid #00f;}
 .role .list{position:absolute;width:600px;bottom:50px;z-index:10;height:175px;left:75px;}
 .role .list .swiper-container{height:175px;margin:0 auto;padding-left:5px;display:flex;justify-content:center;align-items:center;}
 .role .list .swiper-slide{display:flex;align-items:center;}
