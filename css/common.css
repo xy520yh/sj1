@@ -92,12 +92,12 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .game_roles .swiper-slide-active .role_img{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;}
 /*part4*/
 .part4_title{width:750px;height:130px;display:flex;justify-content:center;position:absolute;top:60px;left:0px;}
-/* .part4_fw{width:100%;height:100%;object-fit:cover; position: absolute;left:0px;top:100px; z-index:5;} */
-.role{width:750px;margin:0 auto;}
+.part4_fw{width:100%;height:100%;object-fit:cover; position: absolute;left:0px;top:100px; z-index:1;}
+.role{width:750px;margin:0 auto;z-index: 6;}
 .role .content dd{position:relative;width:750px;height:100vh;display:none;}
 .role .content dd:first-child{display:block;}
 .role .content dd img.role_people{position:absolute;top:0px;right:0px;width:auto;height:100%;object-fit:cover;}
-.role_name{color:#fff;font-family:'Times New Roman',Times,serif;font-size:36px;text-transform:uppercase;font-weight:bold;line-height:65px;margin-left:20px;margin-top: 30px;}
+.role_name{color:#fff;font-family:'Times New Roman',Times,serif;font-size:34px;text-transform:uppercase;font-weight:bold;line-height:65px;margin-left:20px;margin-top: 30px;}
 .role .note .scroll{height:85%;overflow-y:auto;padding:20px 10px 40px 20px; overflow-x: hidden;}
 .note h3{font-size:40px;text-align:left;font-weight:normal;margin-bottom: 10px;}
 .note h4{font-size:24px;height:36px;align-items:center;margin-bottom:20px;display:flex;color:#fff;text-align:left;font-weight:normal;font-family:Verdana,Geneva,Tahoma,sans-serif;}
@@ -105,7 +105,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .note h4::after{transform:rotate(180deg);}
 .note h4 span{margin:0 15px;}
 .note p{font-size:32px;line-height:50px;margin-bottom:15px;}
-.role .note{width:363px;height:613px;color:#fff;font-size:18px;position:absolute;left:30px;top:415px ;background:url(../images/part4_text_bg.png); padding-bottom: 30px;border:1px solid #00f;}
+.role .note{width:363px;height:613px;color:#fff;font-size:18px;position:absolute;left:30px;top:415px ;background:url(../images/part4_text_bg.png); padding-bottom: 30px; z-index: 6;}
 .role .list{position:absolute;width:600px;bottom:50px;z-index:10;height:175px;left:75px;}
 .role .list .swiper-container{height:175px;margin:0 auto;padding-left:5px;display:flex;justify-content:center;align-items:center;}
 .role .list .swiper-slide{display:flex;align-items:center;}
