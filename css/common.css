@@ -9,6 +9,13 @@ mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
 del{text-decoration:line-through;}
 input,select,textarea{vertical-align:middle;border:none;margin:0;padding:0;outline:none;}
 input:focus,.select:focus,textarea:focus{outline:none;}
+textarea, select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
 em{font-style:normal;}
 .hidden{display:none;}
 hr{line-height:1;height:1px;background:none;border-top:1px dashed #9F9F9F;border-bottom:1px dashed #fff;}
@@ -185,13 +192,19 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .prev_scroll,.next_scroll{position:absolute;top:50%;font-size:0;}
 .prev_scroll{left:600px;width:70px;height:70px;background:url(../images/part6_prev.png) no-repeat;background-position:0 0;background-size:100% 100%;}
 .next_scroll{right:600px;width:70px;height:70px;background:url(../images/part6_next.png) no-repeat;background-position:0 0;background-size:100% 100%;}
+.select_box_ios,.select_box_android{position:absolute;left:0;top:90px;width:530px;height:65px;}
+.select_02 select{position: absolute;top:0;border-radius:5px;font-size:26px;color:#181818;width:530px;line-height:65px;background-color:rgba(255,255,255,1);border:1px solid #a0a0a0;
+     z-index:4;padding-left:26px;height:65px;
+    background:url(../images/regisiter_ico.png) no-repeat scroll 500px center #fff;}
+
+/* .select_list option{font-size: 0.17rem; padding-top:0.2rem; padding-bottom: 0.2rem;}
 select{display:none;}
 .select_box{font-size:26px;color:#181818;width:530px;line-height:65px;background-color:rgba(255,255,255,1);border:1px solid #a0a0a0;z-index:4;border-radius:2px;padding-right:20px;position:absolute;left:0;top:80px;}
 .select_showbox{line-height:80px;background:url(../images/regisiter_ico.png) no-repeat right center;padding-left:26px;}
 .select_option{border-top:none;display:none;width:530px;}
 .select_option li{padding-left:26px;}
 .select_option li.selected{background-color:#7b6959;color:#fff;width:99.8%;}
-.select_option li.hover{background:#7b6959;color:#fff;width:99.8%;}
+.select_option li.hover{background:#7b6959;color:#fff;width:99.8%;} */
 .input1{height:80px;width:530px;text-align:center;border:1px solid #a0a0a0;border-radius:2px;background:rgba(255,255,255,0.7);margin-bottom:30px;position:absolute;top:240px;left:0px;}
 .text_content1{width:530px;height:80px;padding-left:26px;color:rgba(24,24,24,0.5);line-height:80px;background:none;font-size:26px;float:left;border:none;overflow:hidden;text-align:left;}
 .yzm input{height:80px;width:300px;border:1px solid #a0a0a0;border-radius:2px;background:rgba(255,255,255,0.7);margin-bottom:30px;}
