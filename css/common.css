@@ -89,8 +89,8 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .game_roles .swiper_dock_list li:nth-child(4){position:absolute;top:18px;left:525px;}
 .game_roles .swiper_dock_list li img{display:none;width:180px;height:180px;}
 .game_roles .swiper_dock_list li .icon.on{display:block;}
-.role_info{padding:40px 20px 40px 20px;position:absolute;bottom:200px;left:0;z-index:1000;width:750px;opacity:0;-webkit-transform:translate(-100%,0);transform:translate(-100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;z-index:99;
-background: rgba(23,59,121,0.75);min-height:300px; border:2px solid #f00;}
+.role_info{padding:40px 20px 40px 20px;position:absolute;bottom:450px;left:0;z-index:1000;width:750px;opacity:0;-webkit-transform:translate(-100%,0);transform:translate(-100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;z-index:99;
+background: rgba(23,59,121,0.75);min-height:300px; border:2px solid #949a5b;}
 .role_info p{font-size:30px;color:#f7f2f0;line-height:46px;}
 .role_info h2{font-size:50px;color:#fff;font-family:'Times New Roman',Times,serif;font-weight: bold;margin-bottom: 30px; text-transform: uppercase;}
 .role_img{position:absolute;top:0px;right:0px;opacity:0;width:750px;height:100%;-webkit-transform:translate(100%,0);transform:translate(100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;}
@@ -106,7 +106,7 @@ background: rgba(23,59,121,0.75);min-height:300px; border:2px solid #f00;}
 .role{width:750px;margin:0 auto;z-index: 6;}
 .role .content dd{position:relative;width:750px;height:100vh;display:none;}
 .role .content dd:first-child{display:block;}
-.role .content dd img.role_people{position:absolute;top:0px;left:0px;width:auto;height:100%;object-fit:cover;}
+.role .content dd img.role_people{position:absolute;top:0px;right:0px;width:auto;height:100%;object-fit:cover;}
 .role_name{width:700px; }
 .role_name h2{color:#fff;font-family:'Times New Roman',Times,serif;font-size:70px;text-transform:uppercase;font-weight:bold;
 text-shadow:10px 10px 8px #000; text-align: left;margin-bottom: 30px;}
