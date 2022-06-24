@@ -89,7 +89,7 @@
     <div class="swiper-slide slide3" data-hash="slide03">
       <div class="main_show">
           <div class="part3_title"><img src="images/part3_title.png" alt=""></div>
-          <div class="dock_list">
+          <div class="dock_list" style="z-index:1000 ;">
             <ul class="swiper_dock_list">
                 <li > 
                   <a href="javascript:void(0)"><img class="icon on" src="images/part3_small_hover_01.png"/></a>
@@ -105,7 +105,7 @@
                 </li>
             </ul>
          </div>
-          <div class="game_roles">
+          <div class="game_roles" style="z-index:1;">
               <div class="swiper-container roles_wrap">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -113,28 +113,28 @@
                           <h2>Craftsman</h2>
                           <P>Craftsmen integrate the principles of alchemy into guns, and pour out firepower in an instant to wipe out their enemies.</P>
                         </div>
-                        <img src="images/part3_role_img01.png" alt="" class="role_img">
+                        <div class="role_img1 role_img" style="z-index:1;"></div>
                       </div>
                       <div class="swiper-slide">
                         <div class="role_info role_info2">
                           <h2>Gladiator</h2>
                           <P>Gladiators use the katana as their weapon and are good at close combat, showing amazing strength whirling a sharp blade!</P>
                         </div>
-                       <img src="images/part3_role_img02.png" alt="" class="role_img">
+                        <div class="role_img2 role_img"></div>
                       </div>
                       <div class="swiper-slide">
                         <div class="role_info role_info3">
                           <h2>Ranger</h2>
                           <P>Rangers have unparalleled mobility and agility, they find the weakness of the enemy and move to kill in one shot!</P>
                         </div>
-                        <img src="images/part3_role_img03.png" alt="" class="role_img">
+                        <div class="role_img3 role_img"></div>
                       </div>
                       <div class="swiper-slide">
                         <div class="role_info role_info4">
                           <h2>Scholar</h2>
                           <P>The magic book held in the hand contains many mysteries, allowing them to deal great damage. They are good at defeating enemies with spells from a distance.</P>
                         </div>
-                        <img src="images/part3_role_img04.png" alt="" class="role_img">
+                        <div class="role_img4 role_img"></div>
                       </div>
                   </div>
               </div>
@@ -639,8 +639,6 @@ $('.features').click(function(){
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true,
     effect : 'fade',
-    observer: true,
-         observeParents: true,
     on:{
       slideChangeTransitionStart:function(roleswiper){
         var length = $(" .swiper_dock_list li").length;
