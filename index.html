@@ -637,7 +637,7 @@ $('.features').click(function(){
 
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
-    loop : true,
+    loop : true, observer:true,observeParents:true,
    // : 'fade',
     on:{
       slideChangeTransitionStart:function(roleswiper){
