@@ -94,11 +94,12 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 background: rgba(23,59,121,0.75);min-height:300px;}
 .role_info p{font-size:30px;color:#f7f2f0;line-height:46px;}
 .role_info h2{font-size:50px;color:#fff;font-family:'Times New Roman',Times,serif;font-weight: bold;margin-bottom: 30px; text-transform: uppercase;}
-.role_img{position:absolute;top:0px;right:0px;opacity:0;width:750px;height:100%;-webkit-transform:translate(100%,0);transform:translate(100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;}
-.role_img1{background:url(../images/part3_role_img01.png) center top no-repeat;background-size: cover;}
-.role_img2{background:url(../images/part3_role_img02.png) center top no-repeat;background-size: cover;}
-.role_img3{background:url(../images/part3_role_img03.png) center top no-repeat;background-size: cover;}
-.role_img4{background:url(../images/part3_role_img04.png) center top no-repeat;background-size: cover;}
+.role_img{position:absolute;top:0px;right:0px;opacity:0;width:750px;height:100%;-webkit-transform:translate(100%,0);transform:translate(100%,0);-webkit-transition:all 0.3s;transition:all 0.3s;
+z-index:10;}
+.role_img1{background:url(../images/part3_role_img01.png) center top no-repeat;background-size: cover;z-index:10;}
+.role_img2{background:url(../images/part3_role_img02.png) center top no-repeat;background-size: cover;z-index:10;}
+.role_img3{background:url(../images/part3_role_img03.png) center top no-repeat;background-size: cover;z-index:10;}
+.role_img4{background:url(../images/part3_role_img04.png) center top no-repeat;background-size: cover;z-index:10;}
 .game_roles .swiper-slide-active .role_info{-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;opacity:1;}
 .game_roles .swiper-slide-active .role_img{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;}
 /*part4*/

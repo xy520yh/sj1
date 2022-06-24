@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>手机端首页</title>
+    <title>手机端首页1</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -37,72 +37,6 @@
 <body>
 <!--蒙层--> 
 <!-- <div class="masked" id="masked"></div> -->
-<!--the world弹窗--> 
-<div id="myModal" class="modal">
- 
-  <div class="modal-content">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="mySlides">
-     
-      <img src="images/part5_img1.jpg" >
-    </div>
-
-    <div class="mySlides">
-     
-      <img src="images/part5_img2.jpg" >
-    </div>
-
-    <div class="mySlides">
-     
-      <img src="images/part5_img3.jpg" >
-    </div>
-    
-    <div class="mySlides">
-     
-      <img src="images/part5_img4.jpg" >
-    </div>
-    <div class="mySlides">
-      
-      <img src="images/part5_img5.jpg" >
-    </div>
-    
-    <div class="mySlides">
-     
-      <img src="images/part5_img6.jpg" >
-    </div>
-
-    <div class="mySlides">
-     
-      <img src="images/part5_img7.jpg" >
-    </div>
-
-    <div class="mySlides">
-     
-      <img src="images/part5_img8.jpg" >
-    </div>
-    
-    <div class="mySlides">
-     
-      <img src="images/part5_img9.jpg" >
-    </div>
-    <div class="mySlides">
-      
-      <img src="images/part5_img10.jpg" >
-    </div>
-    <div class="mySlides">
-      
-      <img src="images/part5_img11.jpg" >
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-   
-  </div>
-</div>
 <!--菜单弹窗-->
 <div class="nav_box">
   <div class="nav_box_main">
@@ -766,47 +700,6 @@ var flower_text_swiper= new Swiper(".flower_text_swiper", {
  });
 
 
-
- /*part5--theworld*/
-
- var worldSwiper=new Swiper(".infoList",{
-  effect: 'coverflow',centeredSlides: true,
-  grabCursor: true,
-  slidesPerView:"auto",
- centeredSlidesBounds: true,observer:true,observeParents:true,
-  navigation: {
-    nextEl: ".info_next2",
-    prevEl: ".info_prev2",
-  },
-
-  scrollbar: {
-    el: ".info_bar", 
-    // hide: true,
-    dragSize: 100,
-    hide: false,
-    draggable: true,
-  },
-  simulateTouch : false,//禁止鼠标模拟
-  mousewheel: true,
-  speed:800,
-  roundLengths : true, 
-  // preventClicks:!1,onInit:function(){
-  //     $(".info_prev").addClass("disabled")
-  // }
-  // ,onSlideChangeStart:function(){
-  //     $(".info_prev2").hasClass("swiper-button-disabled")?$(".info_prev").addClass("disabled"):$(".info_prev").removeClass("disabled"),
-  //     $(".info_next2").hasClass("swiper-button-disabled")?$(".info_next").addClass("disabled"):$(".info_next").removeClass("disabled")
-  // },
-}
-);
-
-$(".section1").on("click",".info_prev",function(){
-$(".info_prev2").click()
-}
-).on("click",".info_next",function(){
-$(".info_next2").click()
-}
-)
  /*part6--轮播*/ 
 var swiper = new Swiper('.img_swiper', {
             loop : true,
@@ -816,41 +709,8 @@ var swiper = new Swiper('.img_swiper', {
 });
 
   
+/*part5--列表*/
 
-//这个世界弹窗	
-function openModal() {
-			document.getElementById('myModal').style.display = "block";
-		}
-		
-		function closeModal() {
-			document.getElementById('myModal').style.display = "none";
-		}
-		
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
-		
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
-		
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-		
-			var captionText = document.getElementById("caption");
-			if (n > slides.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-		
-			slides[slideIndex-1].style.display = "block";
-			
-	}
   $('.news_tab_menu .news_tab_item').click(function(){
         $('.news_box').find('.news_tab_links').removeClass('no');
         $('.news_box').find('.news_tab_links').eq($(this).index()).addClass('no');
