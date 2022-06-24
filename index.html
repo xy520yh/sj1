@@ -534,14 +534,7 @@ $('.features').click(function(){
   $('.nav_box').removeClass('active');
   Mainswiper.slideTo(5);
 });
- //文字滚动时，禁止全屏滚动
- $(function () {
-    $('.note').hover(function () {
-      Mainswiper.mousewheel.disable();
-    }, function () {
-      Mainswiper.mousewheel.enable();
-    })
-})  
+ 
 
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
@@ -563,79 +556,7 @@ $(" .swiper_dock_list li").click(function(){
     $(" .swiper_dock_list li img").removeClass('on');
     $(" .swiper_dock_list li img").eq(index-1).addClass('on');
 });
- /*part4--花灵*/ 
-var flowerswiper = new Swiper('.part4_swiper',{
-    loop:true, initialSlide: 6,
-    slideToClickedSlide: true,
-    slidesPerView: 4,
-    freeMode: true,watchSlidesProgress: true,
-    navigation: {
-      nextEl: '.role .list .swiper-button-next',
-      prevEl: '.role .list .swiper-button-prev',
-},
-on: {
-  resize: function () {
-          setTimeout(function(){
-            flowerswiper.update()
-          },500)
-          
-    },
-  slideChangeTransitionEnd:function(flowerswiper){ 
-        var index = this.realIndex;
-          //role.slideTo(swiper1.realIndex);
-        $('.role .content dd').eq(index).fadeIn().siblings().hide();
-          var dd = $('.role .content dd').eq(index);
-        //  console.log(dd.length)
-            $('.role .content dd').hide()
-            dd.show();
-          //  dd.find('.role_name').addClass('animated fadeInDown');
-          //  dd.find('.role_people').addClass('animated fadeInUp');
-          //  dd.find('.note').addClass('animated fadeInRight');
-        },
-      },
-});
-/*part4--花灵下的文字滚动*/
-var flower_text_swiper= new Swiper(".flower_text_swiper", {
-        direction: "vertical",
-        slidesPerView: "auto",
-        freeMode: true,
-        scrollbar: {
-       
-          el: ".flower_text_swiper .swiper-scrollbar",
-        }, 
-        observer: true,
-         observeParents: true,
-        mousewheel: true,
- });
-
-
- /*part6--轮播*/ 
-var swiper = new Swiper('.img_swiper', {
-            loop : true,
-            pagination: {
-            el: '.swipera .swiper-pagination',
-            },
-});
-
-  
-/*part5--列表*/
-
-  $('.news_tab_menu .news_tab_item').click(function(){
-        $('.news_box').find('.news_tab_links').removeClass('no');
-        $('.news_box').find('.news_tab_links').eq($(this).index()).addClass('no');
-        $(this).addClass('active').siblings().removeClass('active')
-    })  
-
-   
-    $(document).ready(function () {
-　　//第一次进入页面刷新一次，仅一次
-　　//location.href.indexOf("#")获取当前页面地址并在其中查找"#"首次出现位置，找不到就是-1
-    if(location.href.indexOf("#")==-1){
-　　//在当前页面地址加入"#"，使下次不再进入此判断
-    location.href=location.href+"#";
-    location.reload();
-    }
-  });
+ 
 
  </script>
 </body>
