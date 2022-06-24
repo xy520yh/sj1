@@ -639,6 +639,8 @@ $('.features').click(function(){
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true,
     effect : 'fade',
+    observer: true,
+         observeParents: true,
     on:{
       slideChangeTransitionStart:function(roleswiper){
         var length = $(" .swiper_dock_list li").length;
