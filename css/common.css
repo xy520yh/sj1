@@ -65,7 +65,7 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 
 
 
-/* .part1_logo{z-index:33333;width:450px;height:201px;display:flex;flex-flow:column nowrap;justify-content:space-between;align-items:center;position:fixed;top:53px;left:150px;text-align:center;z-index:999999999;
+.part1_logo{z-index:33333;width:450px;height:201px;display:flex;flex-flow:column nowrap;justify-content:space-between;align-items:center;position:fixed;top:53px;left:150px;text-align:center;z-index:999999999;
 	-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out;}
  .part1_reward{position:absolute;left:0;bottom:60px;width:750px;z-index:110;-webkit-transition:all .5s;transition:all .5s;}
  .part1_btn{position:absolute;left:0;bottom:157px;width:750px;padding:24px 0;z-index:110;-webkit-transition:all .5s;transition:all .5s; display: flex; justify-content: center;}
@@ -73,21 +73,21 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .part1_ico{position:absolute;bottom:351px;left:36px;background:rgba(15,36,76,0.4);border-radius: 40px;width:80px; height:186px; display: flex;flex-direction: column;align-items: center; justify-content: center;}
 .part1_ico img{width:60px;height:60px;}
 .part1_ico a:first-child img{margin-bottom: 10px;}
-.part1_menu{position:absolute;top:38px;right:62px;width:54px;height:57px;z-index: 10;} */
+.part1_menu{position:absolute;top:38px;right:62px;width:54px;height:57px;z-index: 10;}
 /*part2*/
-/* .part2_title{width:610px;height:122px;position:absolute;top:60px;left:50%;margin-left:-305px;}
+.part2_title{width:610px;height:122px;position:absolute;top:60px;left:50%;margin-left:-305px;}
 .part2_register_btn{width:610px;height:143px;position:absolute;top:180px;left:50%;margin-left:-305px;}
 .dc_bg {width:703px;height:643px;position: absolute; left:22px; bottom: 30px; background: url(../images/part2_dc_bg.png);}
 .dc img{width:650px;height:145px;}
 .da_cheng_10{position:absolute;top:19px;left:39px;}
 .da_cheng_20{position:absolute;top:172px;;left:39px;}
 .da_cheng_40{position:absolute;top:324px;left:39px;}
-.da_cheng_70{position:absolute;top:477px;;left:39px;} */
+.da_cheng_70{position:absolute;top:477px;;left:39px;}
 /*part3*/
 .game_roles .swiper-container{width:100%;height:100%;z-index:1;}
 .game_roles .swiper-slide{width:750px;height:100%;position:relative;z-index:1;}
 .part3_title{width:750px;height:130px;display:flex;justify-content:center;position:absolute;top:60px;left:0px; z-index: 10;}
-.game_roles{width:750px;height:100%;z-index:1; position: absolute;left:0;border:3px solid #f00;}
+.game_roles{width:750px;height:100%;z-index:1; position: absolute;left:0;border:3px solid #00f;}
 .dock_list{width:750px;height:200px;position:absolute;left:0px;bottom:10px;z-index:1000;}
 .swiper_dock_list{width:750px;height:200px;background:url(../images/part3_ico_bg.png) no-repeat;z-index:1000;background-size:100% 100%;}
 .swiper_dock_list li:nth-child(1), .swiper_dock_list li:nth-child(2), .swiper_dock_list li:nth-child(3), .swiper_dock_list li:nth-child(4){width:151px;height:150px;cursor:pointer;
