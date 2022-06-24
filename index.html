@@ -105,7 +105,7 @@
                 </li>
             </ul>
          </div>
-          <div class="game_roles">
+          <div class="game_roles" style="z-index:1;">
               <div class="swiper-container roles_wrap">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -534,14 +534,6 @@ $('.features').click(function(){
   $('.nav_box').removeClass('active');
   Mainswiper.slideTo(5);
 });
- //文字滚动时，禁止全屏滚动
- $(function () {
-    $('.note').hover(function () {
-      Mainswiper.mousewheel.disable();
-    }, function () {
-      Mainswiper.mousewheel.enable();
-    })
-})  
 
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
@@ -556,7 +548,7 @@ var roleswiper = new Swiper('.roles_wrap', {
     }
    
 });
-roleswiper.update()
+
 $(" .swiper_dock_list li").click(function(){
     var index = $(this).index()+1;
     roleswiper.slideTo(index);
