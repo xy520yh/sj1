@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>手机端首页1</title>
+    <title>手机端首页</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -46,7 +46,7 @@
       <div class="nav_btn">
           <div class="nav_link">
               <div class="link01  active link"><a href="index.html" target="_blank">HOME</a></div>
-              <div class="link02 link"><a href="list.html">NEWS</a></div>
+              <div class="link02 link news"><a href="javascript:void(0)">NEWS</a></div>
               <div class="link03 link characters" ><a href="javascript:void(0)">CHARACTERS</a></div>
               <div class="link04 link flower"><a href="javascript:void(0)">FLOWER FAIRIES</a></div>
               <div class="link06 link features"><a href="javascript:void(0)">FEATURES</a></div>
@@ -617,7 +617,7 @@ $('.flower').click(function(){
   Mainswiper.slideTo(3);
 });
 
-$('.shots').click(function(){
+$('.news').click(function(){
   $('.nav_box').removeClass('active');
   Mainswiper.slideTo(4);
 });
