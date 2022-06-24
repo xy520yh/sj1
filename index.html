@@ -638,7 +638,7 @@ $('.features').click(function(){
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true, observer:true,observeParents:true,
-   // : 'fade',
+   effect: 'fade',
     on:{
       slideChangeTransitionStart:function(roleswiper){
         var length = $(" .swiper_dock_list li").length;
@@ -648,6 +648,7 @@ var roleswiper = new Swiper('.roles_wrap', {
     }
    
 });
+roleswiper.update()
 $(" .swiper_dock_list li").click(function(){
     var index = $(this).index()+1;
     roleswiper.slideTo(index);
