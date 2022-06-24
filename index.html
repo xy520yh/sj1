@@ -543,9 +543,9 @@ $('.features').click(function(){
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true, 
-     //effect: 'fade',
+     effect: 'fade',
     on:{
-      slideChangeTransitionStart:function(roleswiper){
+      slideChangeTransitionEnd:function(roleswiper){
         var length = $(" .swiper_dock_list li").length;
         $(" .swiper_dock_list li img").removeClass('on');
         $(" .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
