@@ -89,6 +89,22 @@
     <div class="swiper-slide slide3" data-hash="slide03">
       <div class="main_show">
           <div class="part3_title"><img src="images/part3_title.png" alt=""></div>
+          <div class="dock_list">
+            <ul class="swiper_dock_list">
+                <li > 
+                  <a href="javascript:void(0)"><img class="icon on" src="images/part3_small_hover_01.png"/></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img class="icon " src="images/part3_small_hover_01.png"/></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img class="icon" src="images/part3_small_hover_01.png"/></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img class="icon" src="images/part3_small_hover_01.png"/></a>
+                </li>
+            </ul>
+         </div>
           <div class="game_roles">
               <div class="swiper-container roles_wrap">
                   <div class="swiper-wrapper">
@@ -121,22 +137,6 @@
                         <div class="role_img4 role_img"></div>
                       </div>
                   </div>
-              </div>
-              <div class="dock_list">
-              <ul class="swiper_dock_list">
-                  <li > 
-                    <a href="javascript:void(0)"><img class="icon on" src="images/part3_small_hover_01.png"/></a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"><img class="icon " src="images/part3_small_hover_01.png"/></a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"><img class="icon" src="images/part3_small_hover_01.png"/></a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)"><img class="icon" src="images/part3_small_hover_01.png"/></a>
-                  </li>
-              </ul>
               </div>
           </div>   
         
@@ -641,18 +641,18 @@ var roleswiper = new Swiper('.roles_wrap', {
     effect : 'fade',
     on:{
       slideChangeTransitionStart:function(roleswiper){
-        var length = $(".game_roles .swiper_dock_list li").length;
-        $(".game_roles .swiper_dock_list li img").removeClass('on');
-        $(".game_roles .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
+        var length = $(" .swiper_dock_list li").length;
+        $(" .swiper_dock_list li img").removeClass('on');
+        $(" .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
     }
     }
    
 });
-$(".game_roles .swiper_dock_list li").click(function(){
+$(" .swiper_dock_list li").click(function(){
     var index = $(this).index()+1;
     roleswiper.slideTo(index);
-    $(".game_roles .swiper_dock_list li img").removeClass('on');
-    $(".game_roles .swiper_dock_list li img").eq(index-1).addClass('on');
+    $(" .swiper_dock_list li img").removeClass('on');
+    $(" .swiper_dock_list li img").eq(index-1).addClass('on');
 });
  /*part4--花灵*/ 
 var flowerswiper = new Swiper('.part4_swiper',{
