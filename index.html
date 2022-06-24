@@ -105,7 +105,7 @@
                 </li>
             </ul>
          </div>
-          <div class="game_roles" style="z-index:1;">
+          <div class="game_roles">
               <div class="swiper-container roles_wrap">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -638,15 +638,8 @@ $('.features').click(function(){
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true,
-     observer: true,
-         observeParents: true,
+   // : 'fade',
     on:{
-      resize: function () {
-          setTimeout(function(){
-            roleswiper.update()
-          },500)
-          
-    },
       slideChangeTransitionStart:function(roleswiper){
         var length = $(" .swiper_dock_list li").length;
         $(" .swiper_dock_list li img").removeClass('on');
