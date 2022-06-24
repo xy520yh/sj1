@@ -638,8 +638,15 @@ $('.features').click(function(){
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true,
-    effect : 'fade',
+     observer: true,
+         observeParents: true,
     on:{
+      resize: function () {
+          setTimeout(function(){
+            roleswiper.update()
+          },500)
+          
+    },
       slideChangeTransitionStart:function(roleswiper){
         var length = $(" .swiper_dock_list li").length;
         $(" .swiper_dock_list li img").removeClass('on');
