@@ -47,12 +47,11 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 
 .role .content dd .role_name,.note h3,.note h4 span,.part5_title h3 span,.role_info h2{font-family: 'Times New Roman', Times, serif;}
 /*part1*/
-.swiper-fullscreen{width: 100%;height: 100%;overflow:hidden; background-position: center top;background-repeat: no-repeat;
-	-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; background-size: cover;position:relative;}
-.swiper-fullscreen >.swiper-wrapper>.swiper-slide{ overflow:hidden; background-position: center top;background-repeat: no-repeat;
-	-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; background-size: cover;position:relative;}
 .swiper-fullscreen{width: 100%;height: 100%;}
-.swiper-fullscreen >.swiper-wrapper>.swiper-slide{width:100%;height:100%;margin:0 auto;background-repeat:no-repeat;background-position: center center;}
+.swiper-fullscreen >.swiper-wrapper>.swiper-slide{background-repeat:no-repeat;background-position: center center; background-size: cover;}
+
+
+
 .swiper-fullscreen .slide1{background-image: url(../images/phone_part01.jpg)}
 .swiper-fullscreen .slide2{background-image: url(../images/phone_part02.jpg)}
 .swiper-fullscreen .slide3{background-image: url(../images/phone_part03.jpg)}
