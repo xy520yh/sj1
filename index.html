@@ -546,6 +546,7 @@ var roleswiper = new Swiper('.roles_wrap', {
      effect: 'fade',
     on:{
       slideChangeTransitionEnd:function(roleswiper){
+        $(" .swiper_dock_list").css({"z-index":"1000"});
         var length = $(" .swiper_dock_list li").length;
         $(" .swiper_dock_list li img").removeClass('on');
         $(" .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
