@@ -627,15 +627,6 @@ var swiper = new Swiper('.img_swiper', {
     })  
 
    
-    $(document).ready(function () {
-　　//第一次进入页面刷新一次，仅一次
-　　//location.href.indexOf("#")获取当前页面地址并在其中查找"#"首次出现位置，找不到就是-1
-    if(location.href.indexOf("#")==-1){
-　　//在当前页面地址加入"#"，使下次不再进入此判断
-    location.href=location.href+"#";
-    location.reload();
-    }
-  });
 
  </script>
 </body>
