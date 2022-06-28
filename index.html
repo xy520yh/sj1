@@ -552,7 +552,7 @@ $('.features').click(function(){
 /*part3--角色*/
 var roleswiper = new Swiper('.roles_wrap', {
     loop : true, 
-     effect: 'fade',
+     effect: 'fade', initialSlide: 1,
     on:{
       slideChangeTransitionEnd:function(roleswiper){
         $(" .swiper_dock_list").css({"z-index":"1000"});
