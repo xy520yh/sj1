@@ -132,7 +132,7 @@ z-index:1;}
 .note h4::before,.note h4::after{content:'';width:13px;height:13px;background:url(../images/part4_text_ico.png);background-size:100% 100%;}
 .note h4::after{transform:rotate(180deg);}
 .note h4 span{margin:0 15px;} */
-.role .note{width:700px;height:195px;color:#fff;position:absolute;left:25px;bottom:260px;background: url(../images/part4_info_text_bg.png); display: flex; align-items: center;flex-direction: column; justify-content: center;}
+.role .note{width:700px;height:195px;color:#fff;position:absolute;left:25px;bottom:267px;background: url(../images/part4_info_text_bg.png); display: flex; align-items: center;flex-direction: column; justify-content: center;}
 /* 
 .role .note .scroll{height:85%;overflow-y:auto;padding:20px 10px 40px 20px; overflow-x: hidden;} */
 
